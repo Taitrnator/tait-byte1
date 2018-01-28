@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="col-xs-12">
+        <h2>How was the vote spread among counties in the Alabama 2017 Special Election?</h2>
+        <p>To answer this I had to scrape a table from CNN and convert it to a CSV. As opposed to getting each counties results
+        one by one from the Alabama state department. I then added a column to the table to give a % margin of victory in order
+        to shade each county. Lastly, I merged this with US Census county shapes which I was able to merge in Google Fusion and
+        filter down to Alabama counties.</p>
+        <iframe width="800" height="1000" scrolling="no" frameborder="no" src="https://fusiontables.google.com/embedviz?q=select+col4%3E%3E0+from+1UfKG4y8dWnX6kImJ4TcTQokEItGr9BLKhJZIG-XD+where+col1%3E%3E0+%3D+&#39;AL&#39;&amp;viz=MAP&amp;h=false&amp;lat=32.63047494174682&amp;lng=-86.46632421875&amp;t=1&amp;z=7&amp;l=col4%3E%3E0&amp;y=2&amp;tmplt=2&amp;hml=KML"></iframe>
+      </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/boostrap.min.js"></script>
+  </body>
+</html>
